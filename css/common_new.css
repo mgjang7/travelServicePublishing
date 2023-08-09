@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+
+/* PC ======================================================================== */
+@media (min-width:981px) {
+    .display_pc {
+        width: 1024px;
+        display: block;
+    }
+
+    .display_mobile {
+        display: none;
+    }
+
+    .container_pc {
+        display: block;
+        width: 1024px;
+        border-radius: 10px;
+        /*min-height: 700px;*/
+        background-color: #eeeeee;
+        margin-top: 90px;
+        padding-left: 0px;
+        padding-right: 0px;
+        overflow: hidden;
+        display: block;
+    }
+
+    .container_mobile {
+        display: none;
+    }
+
+    .content_pc {
+        width: 100%;
+        padding: 25px;
+        background-color: #fff;
+        margin-bottom: 13px;
+    }
+
+    .content_end_pc {
+        width: 100%;
+        padding: 25px;
+        background-color: #fff;
+    }
+
+    .product_info_pc {
+        width: 100%;
+        padding: 15px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .product_img_area_pc {
+        width: 138px;
+        /*width: 165px;*/
+        height: 103px;
+        /*background-image: url(https://testimg.tripplat.com/overseas/product/package/80/a8c195c716f8b04eed5443238799f40c/037b3c18396bf3643ac5a63a022be31f.jpg);*/
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .calendar_dis_row {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+
+    .calendar_row_con_w {
+        width: 49%;
+    }
+
+    .base_layout_mt {
+        margin-top: 82px;
+    }
+
+    .base_b_radius {
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    .contet_b_top_radius {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .pc_w {
+        width:1024px;
+    }
+}
+/* PC end ======================================================================== */
+
+/* Mobile ======================================================================== */
+@media (max-width:980px) {
+    .display_mobile {
+        display:block;
+    }
+
+    .display_pc {
+        display: none;
+    }
+
+    .container_mobile {
+        width: 100%;
+        height: 300px;
+        margin-top: 55px;
+        padding: 15px;
+        /*background-color: #fff;*/
+        background-color: #eeeeee;
+        display: block;
+    }
+
+    .container_pc {
+        display: none;
+    }
+
+    .product_info_mobile {
+        width: 100%;
+        padding: 12px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction:column;
+    }
+
+    .product_img_area_mobile {
+        /*width: 30%;*/
+        width: 106px;
+        height: 103px;
+        /*background-image: url(https://testimg.tripplat.com/overseas/product/package/80/a8c195c716f8b04eed5443238799f40c/037b3c18396bf3643ac5a63a022be31f.jpg);*/
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        border-radius: 5px;
+        margin-top: 0px;
+    }
+
+    .calendar_dis_col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .calendar_col_con_w {
+        width:100%;
+    }
+}
+/* Mobile end ======================================================================== */
+
+.base_layout {
+    background-color: #eeeeee;
+    /*min-height: 1000px;*/
+}
+
+.content_top {
+    background-color: #fff;
+    margin-top: 55px;
+    padding: 20px;
+}
+
+.content {
+    background-color: #fff;
+    margin-top: 13px;
+    padding: 20px;
+}
+
+.pd_x {
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.container-main {
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*공통 색상*/
+.common_border_gray {
+    border: 1px solid #DFDFE7;
+}
+/*공통 색상 end */
+
+/*안심출발 여부 표시*/
+.safe_departure_availability_txt {
+    border: 1px solid #32C18E;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 4px;
+    color: #32C18E;
+}
+
+/*출발확정 여부 표시*/
+.departure_confirmation_availability_txt {
+    border: 1px solid #FE5D41;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 4px;
+    color: #FE5D41;
+}
+
+/*예약가능 여부 표시*/
+.reservation_availability_txt {
+    border: 1px solid #6A64D8;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 4px;
+    color: #6A64D8;
+}
+
+/*최소 출발인원 표시*/
+.minimum_number_departures_txt {
+    color: #FE5D41;
+}
+
+    

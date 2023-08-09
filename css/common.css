@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0 !important;
+}
+
+a {
+  color: inherit !important;
+}
+
+.pc {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+.color-main {
+  color: #fe5d41;
+}
+
+.color-green {
+  color: #00c63b;
+}
+
+.color-red {
+  color: #db142b;
+}
+
+.color-grey {
+  color: #999;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.dropdown {
+  margin-bottom: 10px;
+}
+.dropdown-toggle {
+  width: 100% !important;
+  text-align: left !important;
+  background: none !important;
+  padding: 15px !important;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+}
+
+.dropdown-toggle strong {
+  float: right;
+}
+
+.dropdown-toggle strong svg {
+  margin-left: 5px;
+}
+
+.dropdown-menu.show {
+  width: 100%;
+  border-radius: 0;
+}
+
+.dropdown-menu li {
+  padding: 5px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.dropdown-menu li:last-child {
+  border: none;
+}
+
+.dropdown-menu .dropdown-item p {
+  margin: 5px 0;
+}
+
+.dropdown-menu .dropdown-item .dropdown-title span {
+  font-weight: bold;
+  
+}
+
+.dropdown-menu .dropdown-item .dropdown-title svg {
+  margin-left: 5px;
+}
+
+.dropdown-menu .dropdown-item .dropdown-title strong {
+  float: right;
+}
+
+.tooltip-arrow {
+  color: #fff !important;
+}
+.tooltip-inner p {
+  color: #fff !important;
+}
+
+.price-toggle {
+  border: #dbdbdb dashed 1px;
+  padding: 15px 15px 5px;
+}
+
+.price-toggle ul {
+  margin: 0;
+  padding: 0;
+}
+
+.price-toggle li {
+  padding: 5px 0;
+  overflow: hidden;
+}
+
+.price-toggle li span {
+  float: left;
+}
+
+.price-toggle li strong {
+  float: right;
+}
+
+.btn-outline {
+  border: 1px #e5e5e5 solid;
+  padding: 10px;
+  width: 100%;
+  background: white;
+  cursor: pointer;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.modal-title {
+  font-size: 20px;
+}
+
+.modal-body ul {
+  padding: 0;
+}
+
+.modal-body li {
+  padding: 5px;
+  overflow: hidden;
+}
+
+.modal-body li span {
+  float: left;
+}
+
+.modal-body li strong {
+  float: right;
+}
+
+.modal-body .price-wrap {
+  margin-bottom: 30px;
+  border-bottom: 1px #e5e5e5 solid;
+  padding: 20px 0;
+}
+
+.modal-body .price-wrap li {
+  cursor: pointer;
+}
+
+.modal-body .form-check-label {
+  margin-left: 10px;
+}
+
+.dropdown-menu li {
+  cursor: pointer;
+}
+
+.naver-pay {
+  cursor: pointer;
+}
+
+.naver-pay img {
+  width: 20px !important;
+  margin-right: 5px
+}
+
+.naver-pay a {
+  text-decoration: none;
+}
+
+.form-check-input:checked {
+  background-color: #00c63b !important;
+  border-color: #00c63b !important;
+}
+
+.price-toggle {
+  border: 1px solid #e5e5e5;
+}
+
+.card-body {
+  border: none !important;
+  padding: 5px 0px !important;
+}
+
+.first-card {
+  overflow: hidden;
+}
+
+.first-card span {
+  float: left;
+}
+
+.first-card strong {
+  float: right;
+}
+
+.btn-closed {
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  
+}
+
+.btn-close-arrow {
+  overflow: hidden;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.btn-close-arrow span {
+  float: left;
+}
+
+.btn-closed .arrow {
+  background-image: url(../img/arrow-up.svg);
+  background-repeat: no-repeat; 
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+  float: right;
+}
+
+.collapsed .arrow{
+  background-image: url(../img/arrow-down.svg);
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+  float: right;
+}
+
+.btn-pay {
+  cursor: pointer;
+}
+
+.btn-pay.mobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+  
+  .mobile {
+    display: block;
+  }
+   
+}
