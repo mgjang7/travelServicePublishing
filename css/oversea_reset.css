@@ -3148,6 +3148,7 @@ ul.list_03 li span.price{ margin-left:auto; white-space: nowrap; padding-left: 1
 					background-size: 100% 100%;
 				}
 
+
 /* -----------------------------------
 	2023-08 네이버패키지/티켓 UI/UX 개선
 -------------------------------------- */
@@ -3162,10 +3163,12 @@ ul.list_03 li span.price{ margin-left:auto; white-space: nowrap; padding-left: 1
 .checkbox_wrap input[type="checkbox"]:checked + label::after{top: 50%;left: 50%;width: 5px;height: 8px;border: 2px solid #fff;border-top: transparent;border-left: transparent;transform: translate(-50%,-65%) rotate(45deg);}
 
 /* 추가경비 */
+.content.pc_w{width:100%;}
 div.pro_option_list2.type04{display: flex;flex-wrap: wrap;column-gap: 15px;row-gap: 5px;background-color: transparent;border-color: transparent;}
 div.pro_option_list2.type04 .list_det{width:calc(25% - 45px / 4);border: 1px solid #DAE0E380;}
 div.pro_option_list2.type04 div.list_det div.tit{align-items: center;gap:8px;margin-bottom: 8px;}
 .t_h2.inc_btn .btn_reset{padding: 1px 9px;box-sizing: border-box;border: 1px solid #242424;border-radius: 20px;background-color: #fff;letter-spacing: -0.7px;margin-left: 6px;font-size: 13px;}
+
 @media(max-width:1024px){
 	div.pro_option_list2.type04 .list_det{width:100%;}
 	.t_h2.inc_btn{justify-content: space-between;}
