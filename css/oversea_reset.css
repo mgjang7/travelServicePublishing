@@ -1749,7 +1749,7 @@ div.total_price_03 div span.price::before{content: '￦'; display: inline-block;
 }
 
 .total_price_03 div.price h2 span {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   margin-right: 10px;
   float: left;
@@ -1758,7 +1758,7 @@ div.total_price_03 div span.price::before{content: '￦'; display: inline-block;
 
 .total_price_03 div.price h2 strong{
   font-size: 20px;
-  color: #fe5d41;
+  color: #FF0000;
   display: inline-block;
   margin-left: 10px;
   float: right;
@@ -2352,7 +2352,7 @@ ul.list_03 li span.price{ margin-left:auto; white-space: nowrap; padding-left: 1
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 999;
+	z-index: 9999;
 }
 
 	.reservation_header .reservation_header_wrap {
@@ -3153,7 +3153,7 @@ ul.list_03 li span.price{ margin-left:auto; white-space: nowrap; padding-left: 1
 	2023-08 네이버패키지/티켓 UI/UX 개선
 -------------------------------------- */
 
-/* common */
+/* checkbox */
 .checkbox_wrap{display:table;}
 .checkbox_wrap .txt{display:inline-block;vertical-align:middle;margin-left: .5rem;}
 .checkbox_wrap input[type="checkbox"]{display:none;}
@@ -3161,6 +3161,15 @@ ul.list_03 li span.price{ margin-left:auto; white-space: nowrap; padding-left: 1
 .checkbox_wrap input[type="checkbox"]:checked + label::before,.checkbox_wrap input[type="checkbox"]:checked + label::after{content:'';display:inline-block;position:absolute;}
 .checkbox_wrap input[type="checkbox"]:checked + label::before{top:0;left:0;width:100%;height:100%;background-color:#6A64D9;border-radius:5px;}
 .checkbox_wrap input[type="checkbox"]:checked + label::after{top: 50%;left: 50%;width: 5px;height: 8px;border: 2px solid #fff;border-top: transparent;border-left: transparent;transform: translate(-50%,-65%) rotate(45deg);}
+/* icon */
+[class*=ico]{display:inline-block;background-size:cover;background-position:50% 50%;vertical-align:baseline;}
+.ico_direction{content:'';display:inline-block;position:absolute;top:50%;right:2px;width:6px;height:6px;border:1px solid #242424;border-top:transparent;border-left:transparent;transform:translateY(-50%)rotate(45deg);}
+.on .ico_direction{transform:translateY(-20%)rotate(-135deg);}
+.ico_info{width:10px;height:10px;margin-left:3px;cursor:pointer;background-image: url("data:image/svg+xml,%3Csvg width='10' height='11' viewBox='0 0 10 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.66067 8V4.7H5.34467V8H4.66067ZM5.00267 4.082C4.75067 4.082 4.56467 3.914 4.56467 3.674C4.56467 3.428 4.75067 3.266 5.00267 3.266C5.25467 3.266 5.44667 3.428 5.44667 3.674C5.44667 3.914 5.25467 4.082 5.00267 4.082Z' fill='%23555555'/%3E%3Ccircle cx='5' cy='5.5' r='4.75' stroke='%23555555' stroke-width='0.5'/%3E%3C/svg%3E%0A");}
+.ico_info_black{width:16px;height:16px;background-image: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='10' r='8' fill='%23222222'/%3E%3Cpath d='M7.91716 13V8.52H9.08516V13H7.91716ZM8.50916 7.8C8.10116 7.8 7.80516 7.528 7.80516 7.16C7.80516 6.776 8.10116 6.52 8.50916 6.52C8.90916 6.52 9.20516 6.776 9.20516 7.16C9.20516 7.528 8.90916 7.8 8.50916 7.8Z' fill='white'/%3E%3C/svg%3E%0A");}
+.ico_arrow.right{width:12px;height:8px;margin-left:7px;background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5V3.5ZM11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645L8.17157 0.464466C7.97631 0.269204 7.65973 0.269204 7.46447 0.464466C7.2692 0.659728 7.2692 0.976311 7.46447 1.17157L10.2929 4L7.46447 6.82843C7.2692 7.02369 7.2692 7.34027 7.46447 7.53553C7.65973 7.7308 7.97631 7.7308 8.17157 7.53553L11.3536 4.35355ZM1 4.5L11 4.5V3.5L1 3.5V4.5Z' fill='black'/%3E%3C/svg%3E%0A");}
+/* button */
+.btn_shortcut{display:inline-flex;align-items:center;border: 1px solid #242424;padding: 1px 9px;box-sizing: border-box;border-radius: 5px;}
 
 /* 추가경비 */
 .content.pc_w{width:100%;}
@@ -3169,7 +3178,88 @@ div.pro_option_list2.type04 .list_det{width:calc(25% - 45px / 4);border: 1px sol
 div.pro_option_list2.type04 div.list_det div.tit{align-items: center;gap:8px;margin-bottom: 8px;}
 .t_h2.inc_btn .btn_reset{padding: 1px 9px;box-sizing: border-box;border: 1px solid #242424;border-radius: 20px;background-color: #fff;letter-spacing: -0.7px;margin-left: 6px;font-size: 13px;}
 
+/* 총 상품금액*/
+.total_price_wrap{width:100%;}
+.total_price_wrap .total_price{display:flex;justify-content:space-between;align-items:center;position:relative;width:100%;padding:8px 0;box-sizing:border-box;border:1px solid transparent;border-bottom:1px solid #E8E8E8;background-color:transparent;font-size:20px;font-weight:bold;}
+.total_price_wrap .total_price strong,.total_price_wrap .total_price span{font:inherit}
+.total_price_wrap .total_price .price{position:relative;padding-right:25px;}
+.total_price_wrap .price_detail{display:none;}
+.total_price_wrap .price_detail.on{display:block;}
+.total_price_wrap .price_detail li{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;padding:15px 0;border-bottom:1px solid #E8E8E8;font-size:14px;}
+.total_price_wrap .price_detail li *{font-size:inherit;}
+.total_price_wrap .price_detail li:first-child strong:first-child{font-size:15px;}
+.total_price_wrap .price_detail .tit{display:flex;align-items:center;}
+.total_price_wrap .price_detail .tit strong{font-size: inherit;margin-left:3px;}
+.total_price_wrap .price_detail .guide{font-size:13px;color:#B6B6B6;margin-left:5px;}
+.total_price_wrap .price_detail .etc{display:flex;justify-content:space-between;width:100%;}
+.total_price_wrap .price_detail .etc:first-child{margin-bottom:8px;}
+
+/* 판매자 정보 */
+.seller_info_wrap{display:flex;flex-wrap:wrap;column-gap:4px;row-gap:10px;width:100%;}
+.seller_info_wrap .confm_info,.seller_info_wrap .seller_info{width:calc(50% - 4px / 2);padding:14px 15px;box-sizing:border-box;border-radius:5px;}
+.seller_info_wrap .confm_info{border:1px solid rgba(218, 224, 227, 0.5);}
+.seller_info_wrap .confm_info .tit{font-size:14px;margin-bottom:4px;}
+.seller_info_wrap .confm_info .tit strong{font-size:14px;}
+.seller_info_wrap .confm_info p,.seller_info_wrap .confm_info p span{font-size:12px;color:#555555;}
+.seller_info_wrap .progress_box{display:flex;margin:15px 0 10px 0;padding:19px 20px 15px;border:1px solid #EEF0F6;border-radius:5px;box-sizing:border-box;background-color:rgba(245, 245, 248, 0.5);}
+.seller_info_wrap .progress_box strong{display:block;margin-bottom:6px;font-size:14px;font-weight:500;color:#222;}
+.seller_info_wrap .progress_box .confm_rate,.seller_info_wrap .progress_box .confm_time{width:calc(50%);padding:0 15px;}
+.seller_info_wrap .progress_box .confm_rate{border-right:1px solid #EEF0F6;text-align:center;}
+.seller_info_wrap .progress_box .confm_rate .percent{padding:5px 0;font-size:22px;font-weight:700;color:#6A64D9;}
+.seller_info_wrap .progress_box .confm_rate .percent::after{content:'%';display:inline-block;font-size:16px;margin-left:4px;}
+.seller_info_wrap .progress_box .confm_time .time_list li{display:flex;align-items:center;}
+.seller_info_wrap .progress_box .confm_time .time_list div{font-size:12px;color:#555;}
+.seller_info_wrap .progress_box .confm_time .time_list .progress_bar{position:relative;;width:54px;height:2px;margin:0 10px 0 15px; background-color:#DAE0E3;}
+.seller_info_wrap .progress_box .confm_time .time_list .progress_bar.on{position:absolute;top:0;left:0;width:100%;height:100%;background-color:#6A64D9;margin:0}
+.seller_info_wrap .progress_box .confm_time .time_list .percent{min-width:30px;text-align:right;}
+
+.seller_info_wrap .seller_info{padding:15px 8px 15px 15px;background-color:rgba(106, 100, 217, 0.1);}
+.seller_info_wrap .seller_info .text{height:205px;padding-right:23px;overflow-y:scroll;font-size:14px;white-space:pre-line;}
+.seller_info_btm{display:flex;align-items:center;gap:10px;margin-top:15px;}
+.seller_info_btm > *{font-size:13px;}
+.seller_info_btm .btn_shortcut{margin-right:-5px;}
+
+/* 최종 결제금액 */
+.final_price .dropdown-toggle{border:1px solid #00C73C;background-color:rgba(0, 199, 60, 0.05) !important;border-radius:5px !important;}
+.final_price .dropdown-toggle span{color:#03C75A;font-weight:700;}
+.final_price .dropdown-toggle strong{font-size: 15px;}
+.final_price .dropdown-toggle strong svg{width:10px;}
+.final_price .dropdown-toggle strong svg path{color:#03C75A;}
+.final_price .dropdown-toggle.show{border-bottom:transparent !important;border-radius:5px 5px 0 0 !important;}
+.final_price .dropdown-toggle.show strong svg{transform:rotate(180deg) translateY(2px);}
+.final_price .dropdown-menu li{padding:0;border-bottom:1px solid #E8E8E8;}
+.final_price .dropdown-menu li:last-child{background-color:rgba(245, 245, 248, 0.9);border-radius:0 0 5px 5px;}
+.final_price .dropdown-menu.show{position:relative !important;transform:translateY(0) !important;padding:0px;border-color: #03C75A;border-radius:0 0 5px 5px;border-top:1px solid #ebebeb;}
+.final_price .dropdown-menu .dropdown-item{display:flex;position:relative;padding:15px;color:rgba(112, 112, 112, 1);white-space:normal;font-size:14px;}
+.final_price .dropdown-menu .dropdown-item .dropdown-title{position:relative;;width:100%;}
+.final_price .dropdown-menu .dropdown-item .title_box{display:flex;align-items:flex-start;column-gap:90px;}
+.final_price .dropdown-menu .dropdown-item .title_box .tit{display:flex;align-items:center;gap:8px;min-width:11%;margin-bottom:6px;font-size:14px;font-weight:700;}
+.final_price .dropdown-menu .dropdown-item .title_box .desc {max-width:70%;}
+.final_price .dropdown-menu .dropdown-item .title_box .desc p{font-size:14px;color: #707070;}
+.final_price .dropdown-menu .dropdown-item .title_box .desc strong{float:none;font-size:15px;font-weight:500;}
+.final_price .dropdown-menu .dropdown-item .title_box .desc .price{position:absolute;font-size:15px;font-weight:500;}
+.final_price .dropdown-menu .dropdown-item .title_box .desc .color-red{color:#FF0000;}
+.final_price .dropdown-menu .dropdown-item .title_box+strong{position:absolute;top:0;right:0;font-size:15px;font-weight:500;color:#03C75A;}
+
 @media(max-width:1024px){
 	div.pro_option_list2.type04 .list_det{width:100%;}
 	.t_h2.inc_btn{justify-content: space-between;}
+}
+
+@media(max-width:768px){
+	/* 총 상품금액 */
+	.total_price_wrap .price_detail li:not(.total_price_wrap .price_detail li:first-child,.total_price_wrap .price_detail li:last-child){padding:5px 0;}
+	.total_price_wrap .price_detail .cal{width:100%;margin-top:5px;text-align:right;}
+	/* 판매자 정보 */
+	.seller_info_wrap .confm_info, .seller_info_wrap .seller_info{width:100%;}
+	.seller_info_wrap .progress_box{flex-wrap:wrap;padding:15px 0;}
+	.seller_info_btm{flex-direction:column;align-items:flex-start;gap:8px;}
+	/* 총 결제금액 */
+	.final_price .dropdown-menu .dropdown-item .title_box{flex-direction:column;}
+	.final_price .dropdown-menu .dropdown-item .title_box .desc{max-width:100%;}
+}
+
+@media(max-width:478px){
+	.seller_info_wrap .progress_box .confm_rate, .seller_info_wrap .progress_box .confm_time{display:flex;flex-direction:column;align-items:center;width:auto;flex:1 1 auto;padding:10px;}
+	.seller_info_wrap .seller_info .text{height:133px;}
 }
