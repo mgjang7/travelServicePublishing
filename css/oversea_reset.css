@@ -268,8 +268,8 @@ h2.cominfo_tit span.logo{ margin-left: 10px;}
 
 .calendar table td button.sign_04 i.today{color:#6a64d9; font-weight: bold;}
 
-.incwrap{ margin-left: auto;  width: 100%; margin-top:40px; margin-left: 20px; }
-.incwrap .inc, .incwrap .not{ position: relative;border: #e1e5ea solid 1px; margin-top:6px;}
+.incwrap{ margin-left: auto;  width: 100%; /*margin-top:40px; margin-left: 20px;*/ }
+.incwrap .inc, .incwrap .not{ position: relative;border: #e1e5ea solid 1px; /*margin-top:6px;*/}
 .incwrap h4{font-size: 15px; font-weight: 700; padding: 13px 10px 5px 40px; border-bottom:#e1e5ea solid 1px; height: 50px; background-color: #f5f5f5;}
 .incwrap h4::before{ 
 	content: ''; display: inline-block; width: 18px; height: 18px; position: absolute; top: 15px; left: 15px;
@@ -490,7 +490,7 @@ float: right;}
   font-weight: bold;
   color: #464646;
   text-align: right;
-  margin: 30px 0;
+  /*margin: 30px 0;*/
 }
 .total_price_02 div.point img{ width:40px; }
 .total_price_02 div.point strong{ color: #00c63b; font-size: 15px; padding-left: 10px; }
@@ -1821,7 +1821,7 @@ div.pro_option_wrap div.pro_option_select2 div.select div.li div.info_price butt
 div.pro_option_wrap div.pro_option_select2 div.select div.li div.info_price div.price{ color: #555555; white-space: nowrap; font-weight: 500; text-align: right; width: 100%;font-size: 15px; margin-left:auto; }
 div.pro_option_wrap div.pro_option_select2 div.select div.li div.info_price div.price:before{content: '￦'; display: inline-block; padding-right: 3px; font-weight: normal; }
 
-div.pro_option_list2{ width: 100%; padding: 20px; background-color: #f5f5f8; border: #eef0f6 solid 1px; border-radius: 3px; }
+div.pro_option_list2{ width: 100%; /*padding: 20px;*/ background-color: #f5f5f8; border: #eef0f6 solid 1px; border-radius: 3px; }
 div.pro_option_list2 div.no_list{ text-align: center; font-weight: normal; color: #858585; }
 div.pro_option_list2 div.list_det{ border: rgba(0,0,0,.2) solid 1px; border-radius: 5px; margin-bottom: 5px; padding: 15px; box-shadow: 0px 2px 3px rgb(159, 154, 252, .3); background-color: #ffffff; }
 div.pro_option_list2 div.list_det div.tit{ margin-bottom: 5px; display: flex; align-items: flex-start; }
@@ -1888,7 +1888,7 @@ ul.list_03 li span.price{ margin-left:auto; white-space: nowrap; padding-left: 1
 
 	div.pro_option_wrap div.pro_option_select2 div.select div.li div.tit span.txt{ font-size: 14px; }
 	
-	div.pro_option_list2{ padding: 15px; }
+	div.pro_option_list2{ /*padding: 15px;*/ }
 	div.pro_option_list2 div.no_list{ font-size: 14px; }
 
 	div.basic_pro_wrap div.basic_pro{ padding: 10px; }
@@ -3148,9 +3148,15 @@ input[type=checkbox]:checked::after, input[type=radio]:checked::after{content:''
 .btn_shortcut.type01{padding:25px 0;background-color:#fff;border-radius:3px;font-size:14px;font-weight:500;}
 
 /* 추가경비 */
-.content.pc_w{width:100%;}
-div.pro_option_list2.type04{display: flex;flex-wrap: wrap;column-gap: 15px;row-gap: 5px;background-color: transparent;border-color: transparent;}
-div.pro_option_list2.type04 .list_det{width:calc(25% - 45px / 4);border: 1px solid #DAE0E380;}
+
+/*@media (min-width:981px) {
+	.content.pc_w {
+		width: 1024px;
+	}
+}*/
+
+div.pro_option_list2.type04{display: flex;flex-wrap: wrap;column-gap: 7px;row-gap: 5px;background-color: transparent;border-color: transparent;}
+div.pro_option_list2.type04 .list_det{width:calc(33% - 5px / 3);border: 1px solid #DAE0E380;}
 div.pro_option_list2.type04 div.list_det div.tit{align-items: center;gap:8px;margin-bottom: 8px;}
 .t_h2.inc_btn .btn_reset{padding: 1px 9px;box-sizing: border-box;border: 1px solid #242424;border-radius: 20px;background-color: #fff;letter-spacing: -0.7px;margin-left: 6px;font-size: 13px;}
 

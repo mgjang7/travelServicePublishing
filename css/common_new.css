@@ -6,7 +6,7 @@
 /* PC ======================================================================== */
 @media (min-width:981px) {
     .display_pc {
-        width: 1024px;
+        /*width: 1024px;*/
         display: block;
     }
 
@@ -147,6 +147,10 @@
     .calendar_col_con_w {
         width:100%;
     }
+
+    .mobile_w {
+        width:100%;
+    }
 }
 /* Mobile end ======================================================================== */
 
@@ -174,7 +178,7 @@
 
 .container-main {
     width: 100%;
-    height: 1200px;
+    /*height: 1200px;*/
     display: flex;
     flex-direction: column;
     align-items: center;
