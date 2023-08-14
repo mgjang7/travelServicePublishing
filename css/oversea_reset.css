@@ -1702,6 +1702,13 @@ div.prowrap.no-bort { border-top: #dfdfe7 solid 1px; }
 
 }
 
+.acodi_w .accordion {
+	margin-left: auto;
+	position: absolute;
+	top: 2px;
+	right: 0;
+}
+
 @media screen and (max-width: 1076px) {
 
 /*모바일 이용약관*/
@@ -1709,7 +1716,8 @@ div.prowrap.no-bort { border-top: #dfdfe7 solid 1px; }
 .acodi_w label{ font-size: 13px; display: block;  width:100%; background-color: #fafafa; color: #555555; padding: 10px; border: #dddddd solid 1px; border-radius: 3px;margin-bottom: 2px;}
 .acodi_w label.cb_ov{ background-color: #ffffff; border:#948eef solid 1px;}
 .acodi_w label input[type=checkbox]{ margin-right:5px; }
-.acodi_w .accordion{ margin-left: auto; position: absolute; top: 2px; right: 0;}
+/*.acodi_w .accordion{ margin-left: auto; position: absolute; top: 2px; right: 0;}*/
+	
 .accordion { color: #444; cursor: pointer; padding: 7px 10px; transition: 0.4s;font-weight: 500; font-size: 13px; border-color: transparent; background-color: transparent;}
 .active_ov, .accordion:hover { font-weight: 500; }
 .accordion:after { content: '▼'; color: #777; font-weight: bold; float: right; }
