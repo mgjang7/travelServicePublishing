@@ -111,7 +111,7 @@ body{background-color: #e7f2f8;}
 
 /* common */
 .d_flex{ display:flex; width:100%; }
-.d_flex_c{ display: flex; flex-wrap: wrap; align-items: center; margin-bottom: 10px !important;}
+.d_flex_c{ display: flex; flex-wrap: wrap; align-items: center; margin-bottom: 20px !important;}
 .d_flex_c p {
   font-size: 15px;
 }
@@ -1920,7 +1920,7 @@ ul.list_03 li span.price{ margin-left:auto; white-space: nowrap; padding-left: 1
 .form-check-input.c01 {vertical-align:middle; box-sizing:border-box; border-color:#d0d0d0; background-color:#d0d0d0; background-image:none; margin:0;}
 .form-check-input.c01:checked {background-color:#6a64d9 !important; border-color:#6a64d9 !important; background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");}
 
-._coupon_section {margin-top:30px; padding-top:30px; border-top:3px solid #e1e5ea;}
+/*._coupon_section {margin-top:30px; padding-top:30px; border-top:3px solid #e1e5ea;}*/
 ._coupon_section .benefit_wrap {}
 ._coupon_section .benefit_wrap ul {padding-left:0; margin:0;}
 ._coupon_section .benefit_wrap .item {min-height:61px; box-sizing:border-box; border:1px solid #dbdbdb; background:#f0f0f0; padding:10px 149px 10px 47px; display:flex; align-items:center; position:relative; word-break:break-all;}
@@ -1990,7 +1990,7 @@ ul.list_03 li span.price{ margin-left:auto; white-space: nowrap; padding-left: 1
 		}
 
 ._coupon_section .list_wrap {margin-top:25px; border:1px solid #fe5d41; border-radius:4px;}
-._coupon_section .list_wrap .headerBox {display:flex; width:100%; box-sizing:border-box; border:0; background:transparent; justify-content:space-between; align-items:center; padding:0 19px; height:59px; vertical-align:middle; position:relative;}
+._coupon_section .list_wrap .headerBox {display:flex; width:100%; box-sizing:border-box; border:0; background:transparent; justify-content:space-between; align-items:center; padding:0 19px; /*height:59px;*/ vertical-align:middle; position:relative;}
 ._coupon_section .list_wrap button.headerBox {padding-right:43px;}
 ._coupon_section .list_wrap button.headerBox::after {content:''; position:absolute; right:19px; top:50%; width:14px; height:10px; background:url('../img/bg_check.png') 0 0 no-repeat; margin-top:-5px;}
 ._coupon_section .list_wrap .headerBox .tit {font-size:18px; color:#fe5d41; font-weight:900;}
@@ -2056,7 +2056,14 @@ ul.list_03 li span.price{ margin-left:auto; white-space: nowrap; padding-left: 1
 			}
 
 	._coupon_section .list_wrap {}
-	._coupon_section .list_wrap .headerBox {padding:0 14px; height:49px;}
+	/*._coupon_section .list_wrap .headerBox {padding:0 14px; height:49px;}*/
+		._coupon_section .list_wrap .headerBox {
+			height: 49px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+		}
 	._coupon_section .list_wrap .headerBox::after {}
 	._coupon_section .list_wrap .headerBox .tit {font-size:16px;}
 	._coupon_section .list_wrap .headerBox .ct {font-size:16px;}
@@ -3211,7 +3218,14 @@ div.pro_option_list2.type04 div.list_det div.tit{align-items: center;gap:8px;mar
 .final_price .dropdown-menu li{padding:0;border-bottom:1px solid #E8E8E8;}
 .final_price .dropdown-menu li:last-child{background-color:rgba(245, 245, 248, 0.9);border-radius:0 0 5px 5px;}
 .final_price .dropdown-menu.show{position:relative !important;transform:translateY(0) !important;padding:0px;border-color: #03C75A;border-radius:0 0 5px 5px;border-top:1px solid #ebebeb;}
-.final_price .dropdown-menu .dropdown-item{display:flex;position:relative;padding:15px;color:rgba(112, 112, 112, 1);white-space:normal;font-size:14px;cursor:initial;}
+.final_price .dropdown-menu .dropdown-item {
+	display: flex;
+	position: relative;
+	padding: 15px;
+	color: rgba(112, 112, 112, 1);
+	white-space: normal;
+	font-size: 14px;
+}
 .final_price .dropdown-menu .dropdown-item:active{background-color:transparent;}
 .final_price .dropdown-menu .dropdown-item .dropdown-title{position:relative;;width:100%;}
 .final_price .dropdown-menu .dropdown-item .title_box{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;}
@@ -3226,11 +3240,19 @@ div.pro_option_list2.type04 div.list_det div.tit{align-items: center;gap:8px;mar
 /* 특전 쿠폰 */
 .cpn_wrap .t_h2{margin-bottom:4px;}
 .cpn_wrap .warning{font-size:13px;color:#fe5d41;}
-.cpn_wrap .tit{margin:5px 0 10px}
+.cpn_wrap .tit { /*margin:10px 0 10px;*/
+}
 .cpn_wrap .tit > .warning{margin-left:8px;}
 .cpn_wrap .tit strong{font-size:14px;font-weight:500}
 .cpn_wrap .cpn_view_all{display:flex;gap:5px;margin-bottom:20px;}
-.cpn_wrap .cpn_view_all .list_wrap{flex:1 1 auto;margin:0;padding:15px;}
+	/*.cpn_wrap .cpn_view_all .list_wrap{flex:1 1 auto;margin:0;padding:15px;}*/
+	.cpn_wrap .cpn_view_all .list_wrap {
+		flex: 1 1 auto;
+		margin: 0;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
 .cpn_wrap .cpn_view_all .list_wrap span{display:block;color:#FE5D41;font-size:14px;font-weight:700;}
 .cpn_wrap .cpn_view_all .view_all{display:block;width:18%;min-width:107px}
 .cpn_wrap .cpn_view_all .btn_shortcut.type01{justify-content:center;width:100%;}
