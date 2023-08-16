@@ -1069,7 +1069,7 @@ body{background-color:#ffffff;}
 .datewrap{ width: 100%;  margin-top:30px; }
 .t_h2{ margin-bottom: 10px; display: flex;}
 .t_h2 h2{ font-size: 15px; font-weight: 700; margin-right: 10px; }
-.t_h2 ul{ margin:0; padding-top:10px;  }
+.t_h2 ul{ margin:0; /*padding-top:10px;*/  }
 .t_h2 ul li{ display: inline-block; position: relative;margin-left: 17px; font-size: 13px; }
 .t_h2 ul li::before{content: ''; display: inline-block; position:absolute; top: 5px; left:-15px;width: 10px; height: 10px; border-radius: 5px; margin-right: 10px;}
 .t_h2 ul li.sign_01{color: #6a64d9;}
@@ -3260,7 +3260,7 @@ div.pro_option_list2.type04 div.list_det div.tit{align-items: center;gap:8px;mar
 /* 누구와 함께 가시나요? */
 .going_with .t_h2{margin-bottom:3px;}
 .going_with .btn_wrap{display:flex;gap:4px;margin-top:15px;}
-.going_with .btn_wrap button{padding: 6px 13px;box-sizing: border-box;border: 1px solid #ddd;border-radius: 5px;background-color: #fff;color: #B6B6B6;line-height: 1;}
+.going_with .btn_wrap button{padding: 6px 10px;box-sizing: border-box;border: 1px solid #ddd;border-radius: 5px;background-color: #fff;color: #B6B6B6;line-height: 1;}
 .going_with .btn_wrap button.on{background-color:#6A64D9;color:#fff;}
 
 @media(max-width:1024px){
