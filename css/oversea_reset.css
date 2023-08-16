@@ -3211,7 +3211,8 @@ div.pro_option_list2.type04 div.list_det div.tit{align-items: center;gap:8px;mar
 .final_price .dropdown-menu li{padding:0;border-bottom:1px solid #E8E8E8;}
 .final_price .dropdown-menu li:last-child{background-color:rgba(245, 245, 248, 0.9);border-radius:0 0 5px 5px;}
 .final_price .dropdown-menu.show{position:relative !important;transform:translateY(0) !important;padding:0px;border-color: #03C75A;border-radius:0 0 5px 5px;border-top:1px solid #ebebeb;}
-.final_price .dropdown-menu .dropdown-item{display:flex;position:relative;padding:15px;color:rgba(112, 112, 112, 1);white-space:normal;font-size:14px;}
+.final_price .dropdown-menu .dropdown-item{display:flex;position:relative;padding:15px;color:rgba(112, 112, 112, 1);white-space:normal;font-size:14px;cursor:initial;}
+.final_price .dropdown-menu .dropdown-item:active{background-color:transparent;}
 .final_price .dropdown-menu .dropdown-item .dropdown-title{position:relative;;width:100%;}
 .final_price .dropdown-menu .dropdown-item .title_box{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;}
 .final_price .dropdown-menu .dropdown-item .title_box .price{font-size:15px;font-weight:500;white-space:nowrap;color:#03C75A;}
